@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      
-      - name: Create .nojekyll
-        run: echo "" > ./frontend/public/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
